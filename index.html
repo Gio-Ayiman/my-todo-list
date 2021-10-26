@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Todo-List</title>
+</head>
+
+<body>
+    <div id="container-left">
+        <div id="input">
+            <input type="text" id="input-entree" placeholder="entrez une tâche"/>
+        </div>
+        <div id="div-mon-boutton">
+            <button id="mon-boutton" onclick="addNewElement()">Ajouter</button>
+        </div>
+    </div>
+    <div id="container-right">
+        <div id="div-myList" draggable="false">
+            <div><span class="span-paragraph">manger</span><button class="red-close"></button></div>
+            <div><span class="span-paragraph">dormir</span><button class="red-close"></button></div>
+            <div><span class="span-paragraph">sortir</span><button class="red-close"></button></div>
+        </div>
+    </div>
+
+    <script src="script/main.js"></script>
+</body>
+
+</html>

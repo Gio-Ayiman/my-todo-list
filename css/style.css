@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2? family= Poppins:wght@100 & display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+body{
+  display: flex;
+  background-color: #2a4267;
+}
+
+#container-left {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+#input-entree {
+  display: block;
+  width: 100vw;
+  height: 95px;
+  border: none;
+  background-color: #50b2a2;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #242020;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 16px #00000047;
+}
+
+#mon-boutton {
+  width: 300px;
+  height: 62px;
+  background-color: #d50606;
+  border: none;
+  box-shadow: 0px 0px 16px #00000047;
+  border-radius: 35px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+#mon-boutton:hover{
+  background-color: #bb0000;
+}
+
+#container-rigth{
+  width: 50%;
+  padding-left: 100px;display: none;
+}
+#div-myList {
+  display: flex;
+  flex-direction: column;
+  width: 431px;
+  height: 544px;
+  background-color: #2a4267;
+  box-shadow: 0px 0px 16px #00000047;
+  border: none;
+  padding: 10px 5px 5px 5px;
+  border-radius: 10px;
+  overflow: auto;
+}::-webkit-scrollbar{
+  width: 0;
+}
+
+#div-myList > div {
+  display: block;
+  background-color: #50b2a2;
+  margin-bottom: 3px;
+  border-radius: 10px;
+  padding: 24px 10px 24px 30px;
+  transition: 0.5s;
+}
+.span-paragraph {
+  display: block;
+  float: left;
+  color: #363636;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.red-close {
+  display: block;
+  float: right;
+  height: 24px;
+  width: 24px;
+  border: none;
+  border-radius: 50%;
+  background-color: #8fff8f;
+  box-shadow: 0px 0px 4px #00000047;
+  transition: background-color 0.4s;
+  cursor: pointer;
+}
+
+.red-close:hover{
+  background-color: #5fff5f;
+}
+
+.close{
+  display: none;
+}
