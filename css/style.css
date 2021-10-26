@@ -9,43 +9,55 @@
 
 body{
   display: flex;
+  flex-direction: column;
+  height: 100vh;
   background-color: #2a4267;
 }
 
 #container-left {
   display: flex;
-  width: 50%;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  flex-direction: column;
+  width: 96vw;
+  max-width: 450px;
+  height: 48vh;
+  margin: 0 auto;
 }
 
-
+#input{
+  width: 70%;
+}
 #input-entree {
-  display: block;
-  width: 100vw;
-  height: 95px;
+  width: 100%;
+  height: 50px;
   border: none;
   background-color: #50b2a2;
-  border-radius: 20px;
+  border-radius: 15px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 600;
   color: #242020;
   text-transform: uppercase;
   box-shadow: 0px 0px 16px #00000047;
 }
 
+#div-mon-boutton{
+  width: 30%;
+}
 #mon-boutton {
-  width: 300px;
-  height: 62px;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
   background-color: #d50606;
+  padding: 10px;
   border: none;
   box-shadow: 0px 0px 16px #00000047;
-  border-radius: 35px;
+  border-radius: 15px;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 0.7em;
   cursor: pointer;
   transition: background-color 0.4s;
 }
@@ -54,19 +66,18 @@ body{
   background-color: #bb0000;
 }
 
-#container-rigth{
-  width: 50%;
-  padding-left: 100px;display: none;
+#container-right{
+  width: 96vw;
+  max-width: 450px;
+  margin: 0 auto;
 }
+
 #div-myList {
+  height: 50vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 431px;
-  height: 544px;
-  background-color: #2a4267;
-  box-shadow: 0px 0px 16px #00000047;
   border: none;
-  padding: 10px 5px 5px 5px;
   border-radius: 10px;
   overflow: auto;
 }::-webkit-scrollbar{
@@ -78,14 +89,14 @@ body{
   background-color: #50b2a2;
   margin-bottom: 3px;
   border-radius: 10px;
-  padding: 24px 10px 24px 30px;
+  padding: 12px 10px 12px 30px;
   transition: 0.5s;
 }
 .span-paragraph {
   display: block;
   float: left;
   color: #363636;
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -109,4 +120,48 @@ body{
 
 .close{
   display: none;
+}
+
+@media screen and (min-width : 768px) {
+  body{
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #container-left {
+    width: 48vw;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #input{
+    width: 98%;
+  }
+
+  #input-entree{
+    height: 80px;
+    font-size: 1.2em;
+  }
+
+  #div-mon-boutton{
+    width: 50%;
+  }
+
+  #mon-boutton{
+    width: 60%;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1em;
+  }
+
+  #container-right{
+    width: 48vw;
+  }
+
+  #div-myList{
+    height: 80vh;
+  }
+
 }
