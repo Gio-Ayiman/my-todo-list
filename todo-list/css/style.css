@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2? family= Poppins:wght@100 & display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #2a4267;
+}
+
+#container-left {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 96vw;
+  max-width: 450px;
+  height: 48vh;
+  margin: 0 auto;
+}
+
+#input{
+  width: 70%;
+}
+#input-entree {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #50b2a2;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  color: #242020;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 16px #00000047;
+}
+
+#div-mon-boutton{
+  width: 30%;
+}
+#mon-boutton {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #d50606;
+  padding: 10px;
+  border: none;
+  box-shadow: 0px 0px 16px #00000047;
+  border-radius: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.7em;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+#mon-boutton:hover{
+  background-color: #bb0000;
+}
+
+#container-right{
+  width: 96vw;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+#div-myList {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 10px;
+  overflow: auto;
+}::-webkit-scrollbar{
+  width: 0;
+}
+
+#div-myList > div {
+  display: block;
+  background-color: #50b2a2;
+  margin-bottom: 3px;
+  border-radius: 10px;
+  padding: 12px 10px 12px 30px;
+  transition: 0.5s;
+}
+.span-paragraph {
+  display: block;
+  float: left;
+  color: #363636;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.red-close {
+  display: block;
+  float: right;
+  height: 24px;
+  width: 24px;
+  border: none;
+  border-radius: 50%;
+  background-color: #8fff8f;
+  box-shadow: 0px 0px 4px #00000047;
+  transition: background-color 0.4s;
+  cursor: pointer;
+}
+
+.red-close:hover{
+  background-color: #5fff5f;
+}
+
+.close{
+  display: none;
+}
+
+@media screen and (min-width : 768px) {
+  body{
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #container-left {
+    width: 48vw;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #input{
+    width: 98%;
+  }
+
+  #input-entree{
+    height: 80px;
+    font-size: 1.2em;
+  }
+
+  #div-mon-boutton{
+    width: 50%;
+  }
+
+  #mon-boutton{
+    width: 60%;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1em;
+  }
+
+  #container-right{
+    width: 48vw;
+  }
+
+  #div-myList{
+    height: 80vh;
+  }
+
+}
